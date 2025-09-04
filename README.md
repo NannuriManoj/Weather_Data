@@ -8,7 +8,7 @@ Ensures an Amazon S3 bucket exists (creates it if not).
 
 Saves weather data as JSON files in your S3 bucket with timestamps.
 
-# Features
+## Features
 
 Fetches live weather for one or more cities.
 
@@ -18,7 +18,7 @@ Automatically creates the S3 bucket if missing.
 
 Adds a timestamp to each file for unique storage.
 
-# Requirements
+## Requirements
 
 Python 3.8+
 
@@ -26,7 +26,7 @@ AWS Account with an IAM user that has S3 permissions.
 
 OpenWeather API key (free signup at OpenWeather).
 
-# Setup Instructions
+## Setup Instructions
 
 Make a project folder and move your script there.
 Example structure:
@@ -38,7 +38,7 @@ weather-app/
 └── requirements.txt     # Python dependencies
 
 
-# Install dependencies:
+## Install dependencies:
 Create a requirements.txt file with the following:
 
 boto3
@@ -46,12 +46,12 @@ requests
 python-dotenv
 
 
-# Then run:
+## Then run:
 
 pip install -r requirements.txt
 
 
-# Set up environment variables
+## Set up environment variables
 Create a .env file in the project root:
 
 OPENWEATHER_API_KEY=your_openweather_api_key_here
@@ -64,7 +64,7 @@ AWS_REGION=ap-south-1
 Configure AWS credentials
 Run:
 
-# aws configure
+## aws configure
 
 
 Enter your AWS Access Key, Secret Key, Region, and Output format.
@@ -76,7 +76,7 @@ From the root folder, run:
 python src/weather.py
 
 
-Example output:
+## Example output:
 
 Bucket weather-bucket-09032025 not found, creating...
 Successfully created bucket weather-bucket-09032025 in ap-south-1
@@ -91,4 +91,4 @@ Successfully saved data for Hyderabad to S3
 
 Your S3 bucket will now contain files like:
 
-# weather-data/Hyderabad-20250903-120045.json
+weather-data/Hyderabad-20250903-120045.json
